@@ -1,0 +1,40 @@
+/*기본값*/
+h1 {
+  border: 10px solid green;
+  font-size: 40px;
+  padding: 10px;
+  text-align: center;
+}
+
+ol {
+  padding: 0% 0% 5% 5%;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+}
+
+ul {
+  display: block;
+  padding-left: 33px;
+  padding-right: 33px;
+  margin-right: 10px;
+  border-right: 1px solid gray;
+}
+#word {
+  padding-left: 25px;
+}
+
+/*스크린 폭이 최대 600px인 경우 = 600px이하인 경우*/
+@media only screen and (max-width: 400px) {
+  h1 {
+    border-color: red;
+  }
+  #grid {
+    display: block;
+  }
+  ul {
+    border: none;
+  }
+}
