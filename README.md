@@ -27,6 +27,13 @@ You will also see any lint errors in the console.
 
 # [Responsive CSS](https://www.w3schools.com/css/css_rwd_intro.asp)
 
+## Install
+
+```shell
+$ yarn add react-responsive --save
+$ yarn add @types/react-responsive --save
+```
+
 ## Media Query
 
 -
@@ -37,7 +44,12 @@ You will also see any lint errors in the console.
 
 ```shell
 $ yarn add styled-components
+$ yarn add @types/styled-components --save
 $ yarn add babel-plugin-styled-components --save
 ```
 
 [cf. babel-plugin-styled-components](https://github.com/styled-components/babel-plugin-styled-components)
+
+# vscode-styled-components
+
+download at vscode
