@@ -60,6 +60,10 @@ const Component = styled.div`
 
 - [React Style - Styled Components by nomad coder](https://www.youtube.com/playlist?list=PLaxB3I8dENfHCcr9jG7Yo52B2jcSTdY8f)
 
+- [Styled-components Typescript 적용하기 (+Media query)](https://flamingotiger.github.io/style/styled-components-typescript/)
+
+- [Get Started with CSS Grids(React + Styled Components)](https://dev.to/dank_programmer321/get-started-with-css-grids-react-styled-components-59pk)
+
 ## vscode-styled-components
 
 download at vscode
@@ -71,6 +75,8 @@ download at vscode
 - [media query](https://velog.io/@rjsdnql123/media-query-%EB%A7%9B%EB%B3%B4%EA%B8%B0)
 
 - [Get Started with CSS Grids(React + Styled Components)](https://dev.to/dank_programmer321/get-started-with-css-grids-react-styled-components-59pk)
+
+- [반응형 웹 - 3. 미디어 쿼리 (feat. React, styled-components)](https://eblee-repo.tistory.com/49)
 
 ## Media Query?
 
