@@ -39,10 +39,15 @@ $ yarn add babel-plugin-styled-components --save
 
 ## How to use?
 
+### Use it!
+
+※ Use Capital Letter in front of component name! :(
+(I dont know why.. But it maybe Typescript like this...)
+
 ```javascript
 import styled from "styled-components";
 const Component = styled.div`
-  /*We can use CSS like this!*/
+  //We can use CSS like this!
   display: inline;
   padding: 0;
   margin: 0;
@@ -84,6 +89,14 @@ download at vscode
 
 ## How to use?
 
+### Set viewpoint
+
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+```
+
+### Use with Media Query
+
 ```javascript
 import styled from "styled-components";
 const Component = styled.div`
@@ -96,4 +109,10 @@ const Component = styled.div`
     flex-direction: column;
   }
 `;
+```
+
+### grid?
+
+```
+
 ```

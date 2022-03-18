@@ -1,4 +1,3 @@
-// import original module declarations
 //theme 기본 틀
 import "styled-components";
 
@@ -9,6 +8,8 @@ declare module "styled-components" {
 
     colors: {
       main: string;
+      secondary: string;
+      third: string;
     };
   }
 }
