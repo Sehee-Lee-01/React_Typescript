@@ -1,7 +1,13 @@
 import * as React from "react";
 import theme from "./theme";
 import styled, { ThemeProvider } from "styled-components";
-import { TestingComponent, TestCompoAttrs, MyGlobalStyle } from "./App.styles";
+import {
+  TestingComponent,
+  TestCompoAttrs,
+  MyGlobalStyle,
+  TestCompoParent,
+  TestCompoChild,
+} from "./App.styles";
 import "./App.styles";
 
 // 타입스크립트 버전
@@ -14,6 +20,10 @@ const App: React.FC = () => {
         <TestCompo span={12} />
       </ThemeProvider>
       <TestCompoAttrs />
+      <TestCompoChild />
+      <TestCompoParent>
+        <TestCompoChild />
+      </TestCompoParent>
     </div>
   );
 };

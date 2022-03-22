@@ -30,8 +30,7 @@ You will also see any lint errors in the console.
 ## Install
 
 ```shell
-$ yarn add styled-components
-$ yarn add @types/styled-components --save
+$ yarn add styled-components @types/styled-components --save
 $ yarn add babel-plugin-styled-components --save
 ```
 
@@ -116,3 +115,52 @@ const Component = styled.div`
 ```
 
 ```
+
+# Recoil
+
+## [How to start?](https://recoiljs.org/ko/docs/introduction/getting-started)
+
+### Install
+
+```shell
+$ yarn add recoil @types/recoil
+```
+
+### Make **Recoil Root** in Root Component
+
+```javascript
+import React from "react";
+import {
+  RecoilRoot,
+  atom,
+  selector,
+  useRecoilState,
+  useRecoilValue,
+} from "recoil";
+
+function App() {
+  return (
+    <RecoilRoot>
+      <CharacterCounter />
+    </RecoilRoot>
+  );
+}
+```
+
+## Keyword
+
+### 1. Atom
+
+### 2. Selector
+
+# [React Router Dom v6](https://reactrouter.com/docs/en/v6/getting-started/tutorial)
+
+## How to start?
+
+### Install
+
+```shell
+$ yarn add react-router-dom @types/react-router-dom
+```
+
+###

@@ -7,11 +7,23 @@ import Testing from "./components/newComponents";
 // styled 다음에 html 태그요소
 // ``(백틱)으로 CSS 요소 적용
 export const TestCompoChild = styled.div`
-  background-color: white;
+  background-color: gainsboro;
+  border: 1px;
+  width: 3em;
+  height: 5em;
 `;
+/*
+export const TestCompoChild = styled(Component)`
+  background-color: gainsboro;
+  border: 1px;
+  width: 3em;
+  height: 5em;
+`;
+*/
 
 // 생성2
 //attrs: 속성 지정
+//
 export const TestCompoAttrs = styled.input.attrs({
   required: true,
 })`
@@ -20,20 +32,21 @@ export const TestCompoAttrs = styled.input.attrs({
 `;
 
 // 생성3
-//nesting
+// SASS
+// nesting
 // child component가 있는 경우 지정해서 속성 바꿔줄 수도 있음.
 // 여기선 testCompoChild이 testCompoParent 안에 여러개 있는 경우 마지막 testCompoChild에 적용
 export const TestCompoParent = styled.div`
-  height: 100vh;
-  width: 100%;
-  background-color: #bdc3c7;
+  height: 30%;
+  width: 50%;
+  background-color: yellow;
   ${TestCompoChild}:last-child {
     background-color: blue;
   }
 `;
 
 // 생성4
-//pops를 자유롭게 다룰 수 있다. prop로 스타일을 변경할 수 있다.
+//porps를 자유롭게 다룰 수 있다. prop로 스타일을 변경할 수 있다.
 // 여기서는 theme(아래에 자세히 나옴당)가 props
 interface testCompoProps {
   isTest: Boolean;
@@ -82,6 +95,7 @@ export const TestCompoTheme = styled.button`
 // 자주 쓰는 거 한꺼번에 적용하고 싶다!
 
 //0. 모든 컴포넌트에 공통된 스타일 적용: createGlobalStyle
+
 export const MyGlobalStyle = createGlobalStyle`
   body {
     margin: 0;
@@ -115,6 +129,7 @@ export const TestCompoMake = styled.button`
   padding: 15px;
   background-color: ${(props) => props.theme.colors.main};
 `;
+
 // 2) 컴포넌트 확장
 // testCompoMake을 상속하면서 태그 a의 특성도 가짐(확장)
 export const TestCompoExt = styled(TestCompoMake.withComponent("a"))`
